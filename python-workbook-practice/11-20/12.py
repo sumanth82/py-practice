@@ -23,7 +23,9 @@ print(empty_list)
 ###################        OR ##########################
 
 my_range=range(1,21)
-print([10 * x for x in my_range])
+print([10 * x for x in my_range]) # List comprehension
+
+# O/P: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
 
 
 
