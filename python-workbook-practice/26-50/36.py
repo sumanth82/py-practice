@@ -29,8 +29,6 @@ with open('word1.txt', mode='r+') as D:
 
 # O/P: 10
 
-
-
     #print(D.read().split('', maxsplit: -1))
     #input_value = D.read()
     #print(input_value)
