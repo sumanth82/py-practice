@@ -10,9 +10,8 @@
 import string
 
 with open('separate_script.txt', 'w+') as files:
-    a = 0
-    while (a < 2) 
-    #for letter in string.ascii_lowercase:
+    
+    for letter in string.ascii_lowercase:
         print(len(letter)) # O/P: 1
         print(letter)
         temp = letter 
