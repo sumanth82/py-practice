@@ -1,8 +1,13 @@
-import datetime
+import string
 
-from datetime import *
+string = 'this is a string' 
+x = string.split(' ')
+print(x)
+print(len(x))
 
-#print(dir(datetime))
-#print(help(datetime.time))
-print(date.today())
+
+string = 'this is a string' 
+x = string.split()
+print(x)
+print(len(x))
 
