@@ -27,8 +27,6 @@ for file in letters_folder:
             empty_list.append((list_of_required_python_strings[1].split('.')[0]))
             print(empty_list) # ['h', 'o', 'y', 'n', 't', 'p']
 
-
-
 ############################### ALTERNATIVE SOLUTION #################################
 
 import glob
