@@ -26,4 +26,24 @@ for file in letters_folder:
             print(list_of_required_python_strings[1].split('.')[0]) # p 
             empty_list.append((list_of_required_python_strings[1].split('.')[0]))
             print(empty_list) # ['h', 'o', 'y', 'n', 't', 'p']
+
+
+
+############################### ALTERNATIVE SOLUTION #################################
+
+import glob
+ 
+letters = []
+file_list = glob.iglob("letters/*.txt")
+check = "python"
+ 
+for filename in file_list:
+    with open(filename,"r") as file:
+        letter = file.read().strip("\n")
+    if letter in check:
+        letters.append(letter)
+ 
+print(letters)
+
+
             
