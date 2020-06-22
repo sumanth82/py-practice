@@ -25,11 +25,16 @@ d = {"employees":[{"firstName": "John", "lastName": "Doe"},
 
 for v in d.values():
         if d['employees']:
-    #print(d['employees'])  # [{'firstName': 'John', 'lastName': 'Doe'}, {'firstName': 'Anna', 'lastName': 'Smith'}, {'firstName': 'Peter', 'lastName': 'Jones'}]
+            #print(d['employees'])  # [{'firstName': 'John', 'lastName': 'Doe'}, {'firstName': 'Anna', 'lastName': 'Smith'}, {'firstName': 'Peter', 'lastName': 'Jones'}]
             d['employees'].append(dict([('firstname','Sumant'), ('lastName', 'Renukarya')]))
             break
     
 print(d)
 
 # O/P: {'employees': [{'firstName': 'John', 'lastName': 'Doe'}, {'firstName': 'Anna', 'lastName': 'Smith'}, {'firstName': 'Peter', 'lastName': 'Jones'}, {'firstname': 'Sumant', 'lastName': 'Renukarya'}], 'owners': [{'firstName': 'Jack', 'lastName': 'Petter'}, {'firstName': 'Jessy', 'lastName': 'Petter'}]}
+
+
+########### ALTERNATIVE SOLUTION ##########
+
+d["employees"].append(dict(firstName = "Sumant", lastName = "Renukarya"))
 
