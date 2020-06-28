@@ -11,10 +11,6 @@
         {
             "firstName": "Peter",
             "lastName": "Jones"
-        },
-        {
-            "firstName": "Albert",
-            "lastName": "Deeds"
         }
     ],
     "owners": [
