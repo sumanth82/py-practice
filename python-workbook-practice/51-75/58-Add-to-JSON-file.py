@@ -43,8 +43,6 @@ data['employees'].append(dict(firstName= 'Albert', lastName = 'Deed'))
 
 print(data)
 
-
-
 #data = data + data['employees'][0]['firstName'] = "Albert"
 #data = data + data['employees'][0]['lastName'] = "Bert"
 
