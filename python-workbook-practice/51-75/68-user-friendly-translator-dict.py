@@ -23,12 +23,14 @@ input_keys = list(d.keys())
 print(input_keys)
 print(type(input_keys)) # O/P: str
 
+input_values = list(d.values())
+
 counter = 0
 
 for i in range(len(input_keys)):
     
     if input_word.casefold() == input_keys[i]:
-        print('The word is found')
+        print('The word is found', input_values[i])
         counter = counter + 1
         break
     else:
@@ -39,4 +41,15 @@ for i in range(len(input_keys)):
             pass
 
 
+########## ALTERNATIVE SOLUTION ##########
+
+d = dict(weather = "clima", earth = "terra", rain = "chuva")
+def vocabulary(word):
+    try:
+        return d[word]
+    except KeyError:
+        return "We couldn't find that word!"
+ 
+word = input("Enter word: ").lower()
+print(vocabulary(word))
 
