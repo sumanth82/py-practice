@@ -1,12 +1,15 @@
 # Create a script that let the user type in a search term and opens and search on the browser for that term on google. 
 import requests
+import webbrowser
 
-google_api_url = 'https://www.googleapis.com/webmasters/v3'
+google_search_url = 'https://www.google.com/search?q='
 
-search_query = requests.put(google_api_url)
+input_search_string = input('Enter a query to search in Google: ')
+webbrowser.open(google_search_url+input_search_string)    # O/P: Opens a new default browser - tab
 
+#google_api_url = 'https://www.googleapis.com/webmasters/v3'
 
-
+#search_query = requests.put(google_api_url)
 
 '''
 
@@ -26,3 +29,6 @@ The project has been created and Undefined parameter - API_NAMES has been enable
 
 - Step 2: pip3 install beautifulsoup4
 - pip install google
+
+'''
+
