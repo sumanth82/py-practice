@@ -40,15 +40,58 @@ with open('current_data.txt', 'r+') as retrieved_data:
     #7,11
     #8,12
 
+with open('current_writeback_data.txt', 'w') as writeback_data:
+    writeback_data.write('Hello')
 
     print(type(data))   # O/P: str
+    #print(len(data)) # 26
 
-empty_list = []
+data_list=list(data)
+
+#print(type(data_list))
+
+counter = 1
+for i in range(len(data_list)):
+    if i < counter:
+        if data_list[i].isdigit():
+            print(data_list[i])
+            int(data_list[i])
+            print(type(data_list[i]))
+            data_list = ((data_list[i])*2)
+            print(data_list)
+            counter +=1
+        else:
+            counter+=1
+       # print(data_list[i])
+
+
+#for i in range(len(data_list)):
+#    if isinstance(data_list[i], int):
+#        data_list[i] = (data_list[i])*2
+#        print(data_list[i])
+
+print(data_list)
+
+#data = ", ".join(data)
+#print(data)
+
+#data = data.split(sep='\n')
+#print(data)  # O/P: ['x,y', '3,5', '4,9', '6,10', '7,11', '8,12']
 
 ## STEP 2 - Now, increment the data retrieved and write a new file
 
+#counter = 0
 
-
+#while(counter<26):
+#    for i in range(len(data)):
+#        if i < counter and data[i].isdigit():
+#            data[i] = data[i*2]
+#            counter +=1
+            
+#        else:
+#            pass
+#            counter += 1
+    #print(data)
 
 
 
