@@ -20,8 +20,10 @@
 
 import urllib3
 
+url1=https://www.pythonhow.com/data/sampledata.txt
+
 def fetch_files():
     urllib.request.urlopen(url1)
-    
+
 
 
