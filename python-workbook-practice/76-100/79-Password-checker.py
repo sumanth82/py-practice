@@ -18,7 +18,7 @@ print(split_password)
 counter=0
 
 for i in split_password:
-    if str.isdigit(split_password[i]) or str.isupper(split_password[i]):
+    if str.isdigit(i) or str.isupper(i) and len(split_password)>=5:
         print('All Good')
     else:
         print('Password is NOT fine')
