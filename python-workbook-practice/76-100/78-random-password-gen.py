@@ -16,10 +16,9 @@ print(chosen_password)
 
 # O/P: ['K', 'P', '*', 'G', '^', '0']
 
-required_output=" ".join(chosen_password)
+required_output="".join(chosen_password)
 
-print(required_output)
-
+print(required_output)# O/P: tgU$bK
 print(random.shuffle(['a', 'b', 'c']))  # O/P: None
 
 
