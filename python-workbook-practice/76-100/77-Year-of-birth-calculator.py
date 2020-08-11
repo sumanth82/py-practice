@@ -13,6 +13,21 @@ print(age)
 
 print(date.today()) # O/P: 2020-08-09
 
+print(datetime.today()) # O/P: 2020-08-10 19:11:50.824010
+year = datetime.now().year  
+print(year) # O/P: 2020
+
+dob = year-age
+print(dob) 
+
+
+
+
+
+
+
+
+
 
 
 
