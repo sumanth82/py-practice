@@ -17,21 +17,24 @@ print(split_password)
 
 counter=0
 
+#if str.isdigit() or str.isupper(i) and len(split_password)>=5:
+### My SOLUTION: (AND is INCORRECT)
+
 for i in split_password:
     if str.isdigit(i) or str.isupper(i) and len(split_password)>=5:
         print('All Good')
+        break
     else:
         print('Password is NOT fine')
+        break
+
+#### WORKING SOLUTION
+# any() --> Returns a True if the iteration returns True for any of the iterations
 
 
+if any(i.isdigit() for i in input_password) and any(i.isupper() for i in input_password) and len(input_password)>=5:
+    print('All Good')
+else:
+    print('password NOT fine')
 
-#if (str.isdigit(input_password))=True and (str.isupper(input_password))=True and len(input_password) > 5:
-#    print('Password is as expected')
 
-
-#for i in split_password:
-#    if i
-#if not int or not uppercase() or not len(5):
-#    print('Doesnt meet the requirements')
-#else:
-#    print(input_password)
