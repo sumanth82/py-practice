@@ -14,7 +14,7 @@ with open('countries_raw.txt', 'r') as file:
 
 with open('countries-raw.txt', 'w') as file:
     for line in a:
-        if line.strip('\n')!="" and not line.isupper():
+        if line.strip('\n')!="" and not line.isupper() and line !="Top of Page\n":
             file.write(line)
 
 # O/P is as seen in file countries-raw.txt
