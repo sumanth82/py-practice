@@ -16,6 +16,15 @@ with open('names_file.txt', 'w') as name_write_file:
 
 #### WORKS GREAT #####
     
+##### ALTERNATIVE SOLN #####
+
+line = input("Enter values: ")
+line_list = line.split(",")
+with open("user_data_commas.txt", "a+") as file:
+    for i in line_list:
+        file.write(i + "\n")
+
+        
 
 
 
