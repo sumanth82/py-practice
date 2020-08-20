@@ -9,7 +9,21 @@ while True:
     else:
         with open('file-writer.py', 'a') as file:
             file.write(name+'\n')
-        
+
+### WORKS GREAT 
+
+### ALTERNATIVE SOLUTION ###
+
+input_file=open('user-data.txt', 'a+')
+
+while True:
+    line = input('Enter a name: ')
+    if line == 'CLOSE':
+        input_file.close()
+        break
+    else:
+        file.write(line + '\n')
+
 
 
 
