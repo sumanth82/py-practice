@@ -37,3 +37,18 @@ for i in file_list:
 print(count)
 
 # O/P: 2
+
+#### WORKS GREAT #####
+
+##### ALTERNATIVE SOLUTION #####
+
+import glob
+ 
+file_list=glob.glob1("files","*.py")
+print(len(file_list))
+
+# O/P: 2
+
+
+
+
