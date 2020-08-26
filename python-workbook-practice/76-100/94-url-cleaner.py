@@ -35,5 +35,22 @@ with open('urls.txt', 'r') as url_file:
 ## WORKS GREAT AND as EXPECTED #####
 
 
+##### ALTERNATIVE SOLUTION #####
+
+alternate_value=[]
+
+for line in url_entry:
+    line_removed_s=line.replace('s', '', 1) # Replace s with empty string only in 1st occurrence
+    line_remove_dash = line_removed_s[:6] + '/' +line_removed_s[6:]
+    alternate_value.append(line_remove_dash)
+    
+print(alternate_value)
+
+#O/P: ['http://www.google.com\n', 'http://www.yahoo.com\n', 'http://www.stackoverflow.com\n', 'http://www.pythonhow.com\n']
+
+
+
+
+
 
 
