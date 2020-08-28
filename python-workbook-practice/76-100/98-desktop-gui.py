@@ -10,8 +10,15 @@ from tkinter import *
 # create a new window and assign it to the window variable
 
 window=tkinter.Tk()
+window.title('First GUI app')
+window.mainloop()
 
-# The above opens a pop-up window 
+# The above opens a pop-up window -- WORKS GREAT #####
+
+
+#F1=Frame(window, height=50, width=50)
+#F1.pack()
+
 
 # dir(tkinter)
 
@@ -33,20 +40,19 @@ window=tkinter.Tk()
 
 # We use button widgets to add a clickable-buttons
 
-button=tkinter.Button(text='Add File')
-button1=tkinter.Button(text='Save File')
-button2=tkinter.Button(text='Save and Close')
+#button=tkinter.Button(text='Add File')
+#button1=tkinter.Button(text='Save File')
+#button2=tkinter.Button(text='Save and Close')
 
 
 # Get User Inputs with Entry Widgets
 
-entry=tkinter.Entry(width=20)
+#entry=tkinter.Entry(width=20)
 
 # You need to .pack() the widgets into the window so that they’re visible
 
-entry.pack()
+#entry.pack()
 
 ## Now use .get() on entry to assign the user input to a variable
 
-user_input = entry.get()
-
+#user_input = entry.get()
