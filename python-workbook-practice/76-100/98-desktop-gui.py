@@ -11,7 +11,34 @@ from tkinter import *
 
 window=tkinter.Tk()
 window.title('First GUI app')
-window.mainloop()
+
+frame=tkinter.Frame(master=window, width=900, height=900)
+frame.pack()
+
+# We use button widgets to add a clickable-buttons
+
+button=tkinter.Button(frame, text='Add File', width=40)
+button.pack()
+
+button1=tkinter.Button(frame, text='Save File', width=40)
+button1.pack()
+
+button2=tkinter.Button(frame, text='Save and Close', width=40)
+button2.pack()
+
+# Get User Inputs with Entry Widgets
+
+entry=tkinter.Entry(width=70)
+
+# You need to .pack() the widgets into the window so that they’re visible
+
+entry.pack()
+
+## Now use .get() on entry to assign the user input to a variable
+
+user_input = entry.get()
+
+window.mainloop()           # This is the MOST IMPORTANT method to run the GUI app 
 
 # The above opens a pop-up window -- WORKS GREAT #####
 
@@ -36,23 +63,3 @@ window.mainloop()
 #  '__spec__', '_cnfmerge', '_default_root', '_exit', '_flatten', '_join', '_magic_re', '_setit', '_space_re', '_splitdict', 
 # '_stringify', '_support_default_root', '_test', '_tkerror', '_tkinter', '_varnum', 'constants', 'enum', 'getboolean', 
 # 'getdouble', 'getint', 'image_names', 'image_types', 'mainloop', 're', 'sys', 'wantobjects']
-
-
-# We use button widgets to add a clickable-buttons
-
-#button=tkinter.Button(text='Add File')
-#button1=tkinter.Button(text='Save File')
-#button2=tkinter.Button(text='Save and Close')
-
-
-# Get User Inputs with Entry Widgets
-
-#entry=tkinter.Entry(width=20)
-
-# You need to .pack() the widgets into the window so that they’re visible
-
-#entry.pack()
-
-## Now use .get() on entry to assign the user input to a variable
-
-#user_input = entry.get()
