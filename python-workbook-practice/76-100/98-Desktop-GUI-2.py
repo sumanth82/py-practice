@@ -18,20 +18,19 @@ frame.pack()
 # We use button widgets to add a clickable-buttons
 
 button=tkinter.Button(frame, text='Add File')
-button.pack()
+button.grid(row=0,column=1 )                    # .grid() is needed to position and to be able to click on the button
 
 button1=tkinter.Button(frame, text='Save File')
-button1.pack()
+button1.grid(row=0,column=2)
 
 button2=tkinter.Button(frame, text='Save and Close')
-button2.pack()
+button2.grid(row=0,column=3)
 
 # Get User Inputs with Entry Widgets
 
 entry=tkinter.Entry(width=50)
 
 # You need to .pack() the widgets into the window so that they’re visible
-
 entry.pack()
 
 ## Now use .get() on entry to assign the user input to a variable
